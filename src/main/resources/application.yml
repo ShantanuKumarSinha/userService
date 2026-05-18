@@ -8,8 +8,6 @@ spring:
     url: jdbc:mysql://localhost:3306/microservices?useSSL=false&serverTimezone=UTC
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-
-
   jpa:
     show-sql: true
     hibernate:
@@ -17,3 +15,11 @@ spring:
     database: mysql
     database-platform: org.hibernate.dialect.MySQLDialect
 
+  security:
+    user:
+      name: user
+      password: password
+
+server:
+  servlet:
+    context-path: /microservices/users/api/v1
