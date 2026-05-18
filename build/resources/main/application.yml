@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: microservices
+
+  datasource:
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/microservices?useSSL=false&serverTimezone=UTC
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+
+
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    database: mysql
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+  
